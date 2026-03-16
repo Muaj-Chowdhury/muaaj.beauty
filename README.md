@@ -1,4 +1,4 @@
-# 🛍️ MUAAJ.beauty
+# MUAAJ.beauty
 ### A Luxury E-commerce Ritual for Skin & Self-Care
 
 **MUAAJ.beauty** is a professional, high-performance e-commerce platform built with the **MERN stack** and **Next.js 15**.  
@@ -8,9 +8,9 @@ The platform focuses on **clean UX, SEO performance, and a premium shopping expe
 
 ---
 
-# ✨ Key Features
+#  Key Features
 
-### 🔍 Ritual-Based Product Discovery
+###  Ritual-Based Product Discovery
 Browse products by **specific skin concerns** such as:
 - Acne
 - Brightening
@@ -29,7 +29,7 @@ Example:/product/glow-serum
 
 ---
 
-### 🛠 Admin Dashboard
+###  Admin Dashboard
 Full **CRUD functionality** for managing products:
 
 - Add new products
@@ -40,7 +40,7 @@ Full **CRUD functionality** for managing products:
 
 ---
 
-### ⚡ Server-Side Rendering (SSR)
+###  Server-Side Rendering (SSR)
 Built using **Next.js Server Components** for:
 
 - Faster loading
@@ -49,7 +49,7 @@ Built using **Next.js Server Components** for:
 
 ---
 
-### 🎨 Responsive Luxury UI
+###  Responsive Luxury UI
 A modern, premium UI built with:
 
 - Tailwind CSS
@@ -60,7 +60,7 @@ Fully responsive across **desktop, tablet, and mobile** devices.
 
 ---
 
-# 🛠 Tech Stack
+#  Tech Stack
 
 ## Frontend
 - Next.js 15 (App Router)
@@ -84,11 +84,11 @@ Fully responsive across **desktop, tablet, and mobile** devices.
 
 ---
 
-# 🚀 Setup & Installation
+#  Setup & Installation
 
 ## 1️⃣ Clone the Repository
 
-```bash
+bash
 git clone https://github.com/your-username/muaaj-beauty.git
 cd muaaj-beauty
 
