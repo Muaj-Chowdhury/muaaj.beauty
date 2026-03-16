@@ -1,4 +1,5 @@
 import RegisterForm from "@/components/auth/RegisterForm";
+import { Suspense } from "react";
 
 export const metadata = {
   title: "Join the Glow",
@@ -14,7 +15,9 @@ export default function RegisterPage() {
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/5 rounded-full blur-[100px] -z-10" />
 
       <div className="w-full flex justify-center relative z-10">
+        <Suspense fallback={<div className="animate-pulse">Loading Form...</div>}>
         <RegisterForm />
+      </Suspense>
       </div>
     </section>
   );
