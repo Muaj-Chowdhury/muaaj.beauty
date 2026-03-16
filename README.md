@@ -1,36 +1,148 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛍️ MUAAJ.beauty
+### A Luxury E-commerce Ritual for Skin & Self-Care
 
-## Getting Started
+**MUAAJ.beauty** is a professional, high-performance e-commerce platform built with the **MERN stack** and **Next.js 15**.  
+It introduces a **"Ritual-First" shopping experience**, where users explore skincare products through **skin concerns, categories, and step-by-step usage guides**.
 
-First, run the development server:
+The platform focuses on **clean UX, SEO performance, and a premium shopping experience**.
+
+---
+
+# ✨ Key Features
+
+### 🔍 Ritual-Based Product Discovery
+Browse products by **specific skin concerns** such as:
+- Acne
+- Brightening
+- Hydration
+- Anti-Aging
+
+Or explore by **product category**.
+
+---
+
+### 🔗 SEO-Optimized Slugs
+Human-readable URLs improve search engine visibility.
+
+Example:/product/glow-serum
+
+
+---
+
+### 🛠 Admin Dashboard
+Full **CRUD functionality** for managing products:
+
+- Add new products
+- Edit product information
+- Manage stock
+- Upload product images via ImgBB
+- Toggle **Featured Products**
+
+---
+
+### ⚡ Server-Side Rendering (SSR)
+Built using **Next.js Server Components** for:
+
+- Faster loading
+- Better SEO
+- Dynamic metadata
+
+---
+
+### 🎨 Responsive Luxury UI
+A modern, premium UI built with:
+
+- Tailwind CSS
+- DaisyUI
+- Framer Motion animations
+
+Fully responsive across **desktop, tablet, and mobile** devices.
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+- Next.js 15 (App Router)
+- Tailwind CSS
+- DaisyUI
+- Framer Motion
+- Lucide React Icons
+
+## Backend
+- Next.js Server Actions
+- Next.js API Routes
+
+## Database
+- MongoDB (Native Driver)
+
+## Authentication
+- NextAuth.js (Admin authentication)
+
+## Storage
+- ImgBB API (Product image hosting)
+
+---
+
+# 🚀 Setup & Installation
+
+## 1️⃣ Clone the Repository
 
 ```bash
+git clone https://github.com/your-username/muaaj-beauty.git
+cd muaaj-beauty
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Environment Configuration
+
+Create a .env.local file in the root directory and add the following:
+
+MONGODB_URI=your_mongodb_connection_string
+NEXTAUTH_SECRET=your_auth_secret
+IMGBB_API_KEY=your_imgbb_key
+
+4️⃣ Run the Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Route                 | Description                                                         |
+| --------------------- | ------------------------------------------------------------------- |
+| `/`                   | Landing page with Hero, Categories, Concerns, and Featured products |
+| `/shop`               | Product gallery with filtering and sorting                          |
+| `/shop/[[...filter]]` | Dynamic filtering (category, concern, etc.)                         |
+| `/product/[slug]`     | Product details page with ingredients and ritual steps              |
 
-## Learn More
+| Route                    | Description                                      |
+| ------------------------ | ------------------------------------------------ |
+| `/admin/dashboard`       | Overview with product inventory                  |
+| `/admin/add-product`     | Create new products                              |
+| `/admin/manage-products` | Edit products, stock, price, and featured status |
 
-To learn more about Next.js, take a look at the following resources:
+Each product includes:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ingredients
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Skin type compatibility
 
-## Deploy on Vercel
+Step-by-step usage guide
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📝 Future Milestones
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Planned improvements for the platform:
+
+ Stripe Checkout integration for secure payments
+
+ User Skin Profile for personalized product recommendations
+
+ Saved skincare rituals
+
+ Real-time product reviews & ratings
+
+ Wishlist and shopping cart persistence
+
+ Advanced product search & filtering

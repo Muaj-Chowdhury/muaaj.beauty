@@ -1,0 +1,170 @@
+[
+{
+  "name": "Vitamin C Brightening Serum",
+  "brand": "GlowDerm",
+  "category": "Skincare",
+  "price": 29.99,
+  "discount": 10,
+  "stock": 120,
+  "sku": "GD-VC-001",
+  "description": "A powerful vitamin C serum that brightens skin tone, reduces dark spots, and improves overall radiance.",
+  "images": [
+    "https://i.ibb.co.com/jd8YN9R/vitamin-c-serum-Glow-Derm.avif",
+    "https://i.ibb.co.com/C3nKCZPK/vitamin-c-serum-Glow-Derm-2.jpg"
+  ],
+  "ingredients": ["Vitamin C", "Hyaluronic Acid", "Aloe Vera"],
+  "skinType": ["Normal", "Dry", "Combination"],
+  "ratings": 4.6,
+  "reviews": 214,
+  "tags": ["brightening", "anti-aging", "serum"],
+  "isFeatured": true,
+  "createdAt": "2026-03-11T10:00:00Z"
+},
+{
+  "name": "Hydrating Aloe Face Wash",
+  "brand": "PureSkin",
+  "category": "Skincare",
+  "price": 14.99,
+  "discount": 5,
+  "stock": 200,
+  "sku": "PS-FW-002",
+  "description": "Gentle aloe-based cleanser that hydrates and removes impurities without drying the skin.",
+  "images": [
+    "https://i.ibb.co.com/h1sG65zW/Pure-Skin-Face-Wash-1.jpg",
+    "https://i.ibb.co.com/spZ806jF/Pure-Skin-Face-Wash-2.jpg"
+  ],
+  "ingredients": ["Aloe Vera", "Green Tea Extract"],
+  "skinType": ["All"],
+  "ratings": 4.4,
+  "reviews": 156,
+  "tags": ["cleanser", "hydrating"],
+  "isFeatured": false,
+  "createdAt": "2026-03-10T09:20:00Z"
+},
+{
+  "name": "SPF 50 Sunscreen Lotion",
+  "brand": "SunGuard",
+  "category": "Skincare",
+  "price": 18.50,
+  "discount": 8,
+  "stock": 150,
+  "sku": "SG-SPF-003",
+  "description": "Broad spectrum SPF 50 sunscreen protecting skin from UVA and UVB rays.",
+  "images": [
+    "https://i.ibb.co.com/HTmrspH6/Sunguard-SPF50-Sunscreen-1.jpg",
+    "https://i.ibb.co.com/gMK4fdX7/Sunguard-SPF50-Sunscreen-2.jpg"
+  ],
+  "ingredients": ["Zinc Oxide", "Vitamin E"],
+  "skinType": ["All"],
+  "ratings": 4.7,
+  "reviews": 189,
+  "tags": ["sun protection", "spf"],
+  "isFeatured": true,
+  "createdAt": "2026-03-09T12:00:00Z"
+},
+
+{
+  "name": "Charcoal Detox Face Mask",
+  "brand": "GlowDerm",
+  "category": "Skincare",
+  "price": 19.99,
+  "discount": 10,
+  "stock": 95,
+  "sku": "GD-MASK-005",
+  "description": "Activated charcoal mask that detoxifies pores and removes impurities.",
+  "images": [
+    "https://i.ibb.co.com/8SB02QW/Glowderm-C-1.jpg",
+    "https://i.ibb.co.com/8grpGScs/Glowderm-C-2.jpg"
+  ],
+  "ingredients": ["Activated Charcoal", "Kaolin Clay"],
+  "skinType": ["Oily", "Combination"],
+  "ratings": 4.3,
+  "reviews": 98,
+  "tags": ["detox", "mask"],
+  "isFeatured": false,
+  "createdAt": "2026-03-07T08:45:00Z"
+},
+
+{
+  "name": "Matte Finish Liquid Foundation",
+  "brand": "VelvetGlow",
+  "category": "Cosmetics",
+  "price": 32.00,
+  "discount": 15,
+  "stock": 70,
+  "sku": "VG-FND-007",
+  "description": "Long-lasting matte foundation with full coverage and natural finish.",
+  "images": [
+    "https://i.ibb.co.com/1Y5wWKW2/MATT-LOOK-Velvet-Glow-Foundation-1.jpg",
+    "https://i.ibb.co.com/YB7f1mYy/MATT-LOOK-Velvet-Glow-Foundation-2.jpg"
+  ],
+  "ingredients": ["Silica", "Vitamin E"],
+  "ratings": 4.5,
+  "reviews": 121,
+  "tags": ["makeup", "foundation"],
+  "isFeatured": true,
+  "createdAt": "2026-03-05T11:10:00Z"
+},
+
+{
+  "name": "Keratin Repair Shampoo",
+  "brand": "HairLux",
+  "category": "Haircare",
+  "price": 21.50,
+  "discount": 10,
+  "stock": 130,
+  "sku": "HL-SHAM-009",
+  "description": "Keratin-infused shampoo that repairs damaged hair and restores shine.",
+  "images": [
+    "https://i.ibb.co.com/TDFqCJgz/Keratin-Repair-Shampoo-1.webp",
+    "https://i.ibb.co.com/SDWMZsFT/Keratin-Repair-Shampo-2.webp"
+  ],
+  "ingredients": ["Keratin", "Argan Oil"],
+  "ratings": 4.3,
+  "reviews": 143,
+  "tags": ["shampoo", "repair"],
+  "isFeatured": false,
+  "createdAt": "2026-03-03T10:15:00Z"
+},
+{
+  "name": "Soft Matte Lipstick",
+  "brand": "VelvetGlow",
+  "category": "Cosmetics",
+  "price": 15.99,
+  "discount": 8,
+  "stock": 200,
+  "sku": "VG-LIP-010",
+  "description": "Highly pigmented matte lipstick with smooth application.",
+  "images": [
+    "https://i.ibb.co.com/SwqhCy64/Soft-Matte-Lipstick-1.webp"
+  ],
+  "ingredients": ["Beeswax", "Vitamin E"],
+  "ratings": 4.7,
+  "reviews": 210,
+  "tags": ["lipstick", "makeup"],
+  "isFeatured": true,
+  "createdAt": "2026-03-02T15:00:00Z"
+},
+{
+  "name": "Under Eye Brightening Cream",
+  "brand": "GlowDerm",
+  "category": "Skincare",
+  "price": 26.99,
+  "discount": 12,
+  "stock": 85,
+  "sku": "GD-EYE-011",
+  "description": "Reduces dark circles and puffiness around the eyes.",
+  "images": [
+    "https://i.ibb.co.com/C5tCbqzq/GLOWDERM-Topical-De-Pigmenting-And-Brightening-Cream-1.jpg",
+    "https://i.ibb.co.com/hJ9V18VH/GLOWDERM-Topical-De-Pigmenting-And-Brightening-Cream-2.jpg"
+  ],
+  "ingredients": ["Caffeine", "Peptides"],
+  "skinType": ["All"],
+  "ratings": 4.6,
+  "reviews": 167,
+  "tags": ["eye care", "anti-aging"],
+  "isFeatured": true,
+  "createdAt": "2026-03-01T12:00:00Z"
+}
+
+]
