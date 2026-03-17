@@ -39,7 +39,7 @@ const Navbar = () => {
     hasDropdown: true,
     categories: [
       { name: 'Skincare', href: '/shop/category/skincare' },
-      { name: 'Cosmetics', href: '/shop/category/personal-care' },
+      { name: 'Cosmetics', href: '/shop/category/cosmetics' },
       { name: 'Haircare', href: '/shop/category/haircare' },
     ],
     concerns: [
