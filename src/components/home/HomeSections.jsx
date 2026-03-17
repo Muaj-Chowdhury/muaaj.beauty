@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 const categories = [
   // name: Display label, slug: The value matching your DB, image: icon path
-  { name: 'Cleansers', slug: 'Skincare', image: '/icons/cleanser.png' },
-  { name: 'Serums', slug: 'Serums', image: '/icons/serum.png' },
-  { name: 'Moisturizers', slug: 'Moisturizer', image: '/icons/moisturizer.png' },
+  { name: 'Skincare', slug: 'Skincare', image: '/icons/cleanser.png' },
+  { name: 'Haircare', slug: 'Haircare', image: '/icons/serum.png' },
+  { name: 'Cosmetics', slug: 'Cosmetics', image: '/icons/moisturizer.png' },
 ];
 
 const concerns = [

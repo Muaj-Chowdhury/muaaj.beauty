@@ -1,170 +1,389 @@
 [
-{
-  "name": "Vitamin C Brightening Serum",
-  "brand": "GlowDerm",
-  "category": "Skincare",
-  "price": 29.99,
-  "discount": 10,
-  "stock": 120,
-  "sku": "GD-VC-001",
-  "description": "A powerful vitamin C serum that brightens skin tone, reduces dark spots, and improves overall radiance.",
-  "images": [
-    "https://i.ibb.co.com/jd8YN9R/vitamin-c-serum-Glow-Derm.avif",
-    "https://i.ibb.co.com/C3nKCZPK/vitamin-c-serum-Glow-Derm-2.jpg"
-  ],
-  "ingredients": ["Vitamin C", "Hyaluronic Acid", "Aloe Vera"],
-  "skinType": ["Normal", "Dry", "Combination"],
-  "ratings": 4.6,
-  "reviews": 214,
-  "tags": ["brightening", "anti-aging", "serum"],
-  "isFeatured": true,
-  "createdAt": "2026-03-11T10:00:00Z"
-},
-{
-  "name": "Hydrating Aloe Face Wash",
-  "brand": "PureSkin",
-  "category": "Skincare",
-  "price": 14.99,
-  "discount": 5,
-  "stock": 200,
-  "sku": "PS-FW-002",
-  "description": "Gentle aloe-based cleanser that hydrates and removes impurities without drying the skin.",
-  "images": [
-    "https://i.ibb.co.com/h1sG65zW/Pure-Skin-Face-Wash-1.jpg",
-    "https://i.ibb.co.com/spZ806jF/Pure-Skin-Face-Wash-2.jpg"
-  ],
-  "ingredients": ["Aloe Vera", "Green Tea Extract"],
-  "skinType": ["All"],
-  "ratings": 4.4,
-  "reviews": 156,
-  "tags": ["cleanser", "hydrating"],
-  "isFeatured": false,
-  "createdAt": "2026-03-10T09:20:00Z"
-},
-{
-  "name": "SPF 50 Sunscreen Lotion",
-  "brand": "SunGuard",
-  "category": "Skincare",
-  "price": 18.50,
-  "discount": 8,
-  "stock": 150,
-  "sku": "SG-SPF-003",
-  "description": "Broad spectrum SPF 50 sunscreen protecting skin from UVA and UVB rays.",
-  "images": [
-    "https://i.ibb.co.com/HTmrspH6/Sunguard-SPF50-Sunscreen-1.jpg",
-    "https://i.ibb.co.com/gMK4fdX7/Sunguard-SPF50-Sunscreen-2.jpg"
-  ],
-  "ingredients": ["Zinc Oxide", "Vitamin E"],
-  "skinType": ["All"],
-  "ratings": 4.7,
-  "reviews": 189,
-  "tags": ["sun protection", "spf"],
-  "isFeatured": true,
-  "createdAt": "2026-03-09T12:00:00Z"
-},
-
-{
-  "name": "Charcoal Detox Face Mask",
-  "brand": "GlowDerm",
-  "category": "Skincare",
-  "price": 19.99,
-  "discount": 10,
-  "stock": 95,
-  "sku": "GD-MASK-005",
-  "description": "Activated charcoal mask that detoxifies pores and removes impurities.",
-  "images": [
-    "https://i.ibb.co.com/8SB02QW/Glowderm-C-1.jpg",
-    "https://i.ibb.co.com/8grpGScs/Glowderm-C-2.jpg"
-  ],
-  "ingredients": ["Activated Charcoal", "Kaolin Clay"],
-  "skinType": ["Oily", "Combination"],
-  "ratings": 4.3,
-  "reviews": 98,
-  "tags": ["detox", "mask"],
-  "isFeatured": false,
-  "createdAt": "2026-03-07T08:45:00Z"
-},
+  {
+    "name": "Vitamin C Brightening Serum",
+    "slug": "vitamin-c-brightening-serum",
+    "brand": "GlowDerm",
+    "category": "Skincare",
+    "sku": "GD-VC-001",
+    "description": "A potent 15% Vitamin C serum designed to neutralize free radicals, brighten the complexion, and diminish the appearance of dark spots. Enhanced with Ferulic Acid for stability and maximum antioxidant protection.",
+    "price": 29.99,
+    "discount": 10,
+    "stock": 120,
+    "ingredients": [
+      "L-Ascorbic Acid",
+      "Hyaluronic Acid",
+      "Aloe Barbadensis Leaf Juice",
+      "Ferulic Acid",
+      "Tocopherol (Vitamin E)",
+      "Glycerin"
+    ],
+    "skinType": [
+      "Normal",
+      "Dry",
+      "Combination"
+    ],
+    "concerns": [
+      "Dullness",
+      "Hyperpigmentation",
+      "Fine Lines"
+    ],
+    "images": [
+      "https://i.ibb.co.com/jd8YN9R/vitamin-c-serum-Glow-Derm.avif",
+      "https://i.ibb.co.com/C3nKCZPK/vitamin-c-serum-Glow-Derm-2.jpg"
+    ],
+    "usageSteps": [
+      "1. Cleanse face thoroughly.",
+      "2. Apply 3-5 drops to face and neck.",
+      "3. Follow with moisturizer and SPF."
+    ],
+    "ratings": 4.6,
+    "reviews": 214,
+    "isFeatured": false,
+    "createdAt": "2026-03-11T10:00:00Z",
+    "updatedAt": "2026-03-11T10:00:00Z"
+  },
+  {
+    "name": "Hydrating Aloe Face Wash",
+    "slug": "hydrating-aloe-face-wash",
+    "brand": "PureSkin",
+    "category": "Skincare",
+    "sku": "PS-FW-002",
+    "description": "A non-foaming, pH-balanced cleanser that removes impurities while soothing the skin barrier. Infused with pure Aloe Vera and Green Tea to prevent redness and maintain moisture levels.",
+    "price": 14.99,
+    "discount": 5,
+    "stock": 200,
+    "ingredients": [
+      "Aloe Barbadensis Leaf Extract",
+      "Camellia Sinensis (Green Tea) Leaf Extract",
+      "Aqua",
+      "Decyl Glucoside",
+      "Panthenol"
+    ],
+    "skinType": [
+      "All",
+      "Sensitive"
+    ],
+    "concerns": [
+      "Dryness",
+      "Sensitivity"
+    ],
+    "images": [
+      "https://i.ibb.co.com/h1sG65zW/Pure-Skin-Face-Wash-1.jpg",
+      "https://i.ibb.co.com/spZ806jF/Pure-Skin-Face-Wash-2.jpg"
+    ],
+    "usageSteps": [
+      "1. Wet face with lukewarm water.",
+      "2. Massage cleanser in circular motions.",
+      "3. Rinse and pat dry."
+    ],
+    "ratings": 4.4,
+    "reviews": 156,
+    "isFeatured": false,
+    "createdAt": "2026-03-10T09:20:00Z",
+    "updatedAt": "2026-03-10T09:20:00Z"
+  },
+  {
+    "name": "SPF 50 Sunscreen Lotion",
+    "slug": "spf-50-sunscreen-lotion",
+    "brand": "SunGuard",
+    "category": "Skincare",
+    "sku": "SG-SPF-003",
+    "description": "A lightweight, reef-safe mineral sunscreen that provides broad-spectrum protection. It leaves a sheer finish without a white cast, making it ideal for daily wear under makeup.",
+    "price": 18.5,
+    "discount": 8,
+    "stock": 150,
+    "ingredients": [
+      "Zinc Oxide 20%",
+      "Tocopheryl Acetate",
+      "Caprylic/Capric Triglyceride",
+      "Titanium Dioxide"
+    ],
+    "skinType": [
+      "All"
+    ],
+    "concerns": [
+      "Sun Damage",
+      "Prevention"
+    ],
+    "images": [
+      "https://i.ibb.co.com/HTmrspH6/Sunguard-SPF50-Sunscreen-1.jpg",
+      "https://i.ibb.co.com/gMK4fdX7/Sunguard-SPF50-Sunscreen-2.jpg"
+    ],
+    "usageSteps": [
+      "1. Apply liberally 15 minutes before sun exposure.",
+      "2. Reapply every 2 hours.",
+      "3. Reapply after swimming or sweating."
+    ],
+    "ratings": 4.7,
+    "reviews": 189,
+    "isFeatured": true,
+    "createdAt": "2026-03-09T12:00:00Z",
+    "updatedAt": "2026-03-09T12:00:00Z"
+  },
+  {
+    "name": "Charcoal Detox Face Mask",
+    "slug": "charcoal-detox-face-mask",
+    "brand": "GlowDerm",
+    "category": "Skincare",
+    "sku": "GD-MASK-005",
+    "description": "Deep-cleansing clay mask that uses activated charcoal to draw out bacteria, chemicals, and dirt from the skin. Kaolin clay helps absorb excess sebum and minimize the look of pores.",
+    "price": 19.99,
+    "discount": 10,
+    "stock": 95,
+    "ingredients": [
+      "Activated Charcoal",
+      "Kaolin Clay",
+      "Bentonite",
+      "Melaleuca Alternifolia (Tea Tree) Oil"
+    ],
+    "skinType": [
+      "Oily",
+      "Combination"
+    ],
+    "concerns": [
+      "Clogged Pores",
+      "Oil Control",
+      "Acne"
+    ],
+    "images": [
+      "https://i.ibb.co.com/8SB02QW/Glowderm-C-1.jpg",
+      "https://i.ibb.co.com/8grpGScs/Glowderm-C-2.jpg"
+    ],
+    "usageSteps": [
+      "1. Apply an even layer to clean skin.",
+      "2. Leave on for 10-15 minutes.",
+      "3. Rinse with warm water."
+    ],
+    "ratings": 4.3,
+    "reviews": 98,
+    "isFeatured": false,
+    "createdAt": "2026-03-07T08:45:00Z",
+    "updatedAt": "2026-03-07T08:45:00Z"
+  },
 
 {
   "name": "Matte Finish Liquid Foundation",
+  "slug": "matte-finish-liquid-foundation",
   "brand": "VelvetGlow",
   "category": "Cosmetics",
-  "price": 32.00,
+  "sku": "VG-FND-007",
+  "description": "A high-performance, full-coverage liquid foundation that provides a seamless matte finish for up to 24 hours. Formulated with oil-absorbing silica and nourishing Vitamin E to prevent oxidation and keep the skin looking fresh and shine-free.",
+  "price": 32,
   "discount": 15,
   "stock": 70,
-  "sku": "VG-FND-007",
-  "description": "Long-lasting matte foundation with full coverage and natural finish.",
+  "ingredients": [
+    "Aqua",
+    "Cyclopentasiloxane",
+    "Silica",
+    "Isododecane",
+    "Tocopheryl Acetate (Vitamin E)",
+    "Titanium Dioxide",
+    "Glycerin",
+    "Dimethicone"
+  ],
+  "skinType": [
+    "Oily",
+    "Combination",
+    "Normal"
+  ],
+  "concerns": [
+    "Shine Control",
+    "Uneven Skin Tone",
+    "Full Coverage"
+  ],
   "images": [
     "https://i.ibb.co.com/1Y5wWKW2/MATT-LOOK-Velvet-Glow-Foundation-1.jpg",
     "https://i.ibb.co.com/YB7f1mYy/MATT-LOOK-Velvet-Glow-Foundation-2.jpg"
   ],
-  "ingredients": ["Silica", "Vitamin E"],
+  "usageSteps": [
+    "1. Shake the bottle well before use.",
+    "2. Apply a small amount to the back of your hand.",
+    "3. Blend onto the face using a foundation brush or damp sponge, starting from the center and moving outward."
+  ],
   "ratings": 4.5,
   "reviews": 121,
-  "tags": ["makeup", "foundation"],
   "isFeatured": true,
-  "createdAt": "2026-03-05T11:10:00Z"
-},
+  "createdAt": "2026-03-05T11:10:00Z",
+  "updatedAt": "2026-03-17T23:55:00.000Z"
+}
+,
 
 {
   "name": "Keratin Repair Shampoo",
+  "slug": "keratin-repair-shampoo",
   "brand": "HairLux",
   "category": "Haircare",
-  "price": 21.50,
+  "sku": "HL-SHAM-009",
+  "description": "A high-performance shampoo enriched with hydrolyzed keratin and cold-pressed argan oil. It specifically targets weakened hair bonds to repair structural damage, eliminate frizz, and restore a brilliant, healthy shine to dull or over-processed hair.",
+  "price": 21.5,
   "discount": 10,
   "stock": 130,
-  "sku": "HL-SHAM-009",
-  "description": "Keratin-infused shampoo that repairs damaged hair and restores shine.",
+  "ingredients": [
+    "Water (Aqua)",
+    "Sodium Laureth Sulfate",
+    "Hydrolyzed Keratin",
+    "Argania Spinosa (Argan) Kernel Oil",
+    "Glycerin",
+    "Panthenol",
+    "Sodium Chloride",
+    "Citric Acid"
+  ],
+  "skinType": [
+    "All Scalp Types"
+  ],
+  "concerns": [
+    "Damaged Hair",
+    "Frizz",
+    "Split Ends"
+  ],
   "images": [
     "https://i.ibb.co.com/TDFqCJgz/Keratin-Repair-Shampoo-1.webp",
     "https://i.ibb.co.com/SDWMZsFT/Keratin-Repair-Shampo-2.webp"
   ],
-  "ingredients": ["Keratin", "Argan Oil"],
+  "usageSteps": [
+    "1. Apply a generous amount to wet hair.",
+    "2. Massage gently into the scalp and through the ends.",
+    "3. Rinse thoroughly and follow with conditioner."
+  ],
   "ratings": 4.3,
   "reviews": 143,
-  "tags": ["shampoo", "repair"],
   "isFeatured": false,
-  "createdAt": "2026-03-03T10:15:00Z"
-},
+  "createdAt": "2026-03-03T10:15:00Z",
+  "updatedAt": "2026-03-17T23:45:00.000Z"
+}
+,
 {
   "name": "Soft Matte Lipstick",
+  "slug": "soft-matte-lipstick",
   "brand": "VelvetGlow",
   "category": "Cosmetics",
+  "sku": "VG-LIP-010",
+  "description": "A luxuriously creamy, highly pigmented matte lipstick that delivers intense color payoff in a single swipe. Formulated with conditioning agents to ensure a comfortable, non-drying wear that lasts all day without feathering.",
   "price": 15.99,
   "discount": 8,
   "stock": 200,
-  "sku": "VG-LIP-010",
-  "description": "Highly pigmented matte lipstick with smooth application.",
+  "ingredients": [
+    "Cera Alba (Beeswax)",
+    "Tocopherol (Vitamin E)",
+    "Ricinus Communis (Castor) Seed Oil",
+    "Octyldodecanol",
+    "Microcrystalline Wax",
+    "Ethylhexyl Palmitate"
+  ],
+  "skinType": [
+    "All"
+  ],
+  "concerns": [
+    "Dryness",
+    "Long-wear",
+    "Pigmentation"
+  ],
   "images": [
     "https://i.ibb.co.com/SwqhCy64/Soft-Matte-Lipstick-1.webp"
   ],
-  "ingredients": ["Beeswax", "Vitamin E"],
+  "usageSteps": [
+    "1. Exfoliate lips for a smooth base.",
+    "2. Apply lipstick starting from the center of the upper lip.",
+    "3. Work towards the outer edges and repeat for the bottom lip."
+  ],
   "ratings": 4.7,
   "reviews": 210,
-  "tags": ["lipstick", "makeup"],
   "isFeatured": true,
-  "createdAt": "2026-03-02T15:00:00Z"
-},
+  "createdAt": "2026-03-02T15:00:00Z",
+  "updatedAt": "2026-03-17T23:30:00.000Z"
+}
+,
 {
   "name": "Under Eye Brightening Cream",
+  "slug": "under-eye-brightening-cream",
   "brand": "GlowDerm",
   "category": "Skincare",
+  "sku": "GD-EYE-011",
+  "description": "A revitalizing eye cream formulated to target vascular and pigmented dark circles. Infused with caffeine to constrict blood vessels and peptides to stimulate collagen, it visibly reduces puffiness and firms the delicate eye area.",
   "price": 26.99,
   "discount": 12,
   "stock": 85,
-  "sku": "GD-EYE-011",
-  "description": "Reduces dark circles and puffiness around the eyes.",
+  "ingredients": [
+    "Aqua",
+    "Glycerin",
+    "Caffeine",
+    "Palmitoyl Tripeptide-1",
+    "Palmitoyl Tetrapeptide-7",
+    "Niacinamide",
+    "Sodium Hyaluronate",
+    "Shea Butter"
+  ],
+  "skinType": [
+    "Dry",
+    "Oily",
+    "Combination",
+    "Normal",
+    "Sensitive"
+  ],
+  "concerns": [
+    "Dark Circles",
+    "Puffiness",
+    "Fine Lines"
+  ],
   "images": [
     "https://i.ibb.co.com/C5tCbqzq/GLOWDERM-Topical-De-Pigmenting-And-Brightening-Cream-1.jpg",
     "https://i.ibb.co.com/hJ9V18VH/GLOWDERM-Topical-De-Pigmenting-And-Brightening-Cream-2.jpg"
   ],
-  "ingredients": ["Caffeine", "Peptides"],
-  "skinType": ["All"],
+  "usageSteps": [
+    "1. Cleanse and dry the face.",
+    "2. Apply a pea-sized amount onto the ring finger.",
+    "3. Gently tap around the orbital bone until absorbed."
+  ],
   "ratings": 4.6,
   "reviews": 167,
-  "tags": ["eye care", "anti-aging"],
-  "isFeatured": true,
-  "createdAt": "2026-03-01T12:00:00Z"
+  "isFeatured": false,
+  "createdAt": "2026-03-01T12:00:00Z",
+  "updatedAt": "2026-03-17T17:30:00.000Z"
 }
+,
+{
+  "name": "Sensibio H2O Micellar Water",
+  "slug": "sensibio-h2o-micellar-water",
+  "brand": "Bioderma",
+  "category": "Cleansers",
+  "sku": "BD-SEN-H2O-500",
+  "description": "A cult-favorite soothing micellar water that cleanses and removes makeup while respecting the skin's natural physiological balance. Formulated with a pH of 5.5, it is perfect for sensitive skin.",
+  "price": 18.99,
+  "discount": 10,
+  "stock": 108,
+  "ingredients": [
+    "Water (Aqua)",
+    "Peg-6 Caprylic/Capric Glycerides",
+    "Fructooligosaccharides",
+    "Mannitol",
+    "Xylitol",
+    "Rhamnose",
+    "Cucumber Fruit Extract"
+  ],
+  "skinType": [
+    "Sensitive",
+    "All Skin Types"
+  ],
+  "concerns": [
+    "Makeup Removal",
+    "Redness",
+    "Soothing"
+  ],
+  "images": [
+    "https://i.ibb.co/d0H8d8d6/bioderma-2.jpg"
+  ],
+  "usageSteps": [
+    "1. Soak a cotton pad with Sensibio H2O.",
+    "2. Gently cleanse and/or remove makeup from your face and eyes.",
+    "3. Re-apply until the cotton pad becomes clean.",
+    "4. Lightly dab your face with a clean cotton towel."
+  ],
+  "ratings": 4.8,
+  "reviews": 1240,
+  "isFeatured": true,
+  "createdAt": "2026-03-14T17:45:47.201Z",
+  "updatedAt": "2026-03-14T17:45:47.201Z"
+}
+
 
 ]
