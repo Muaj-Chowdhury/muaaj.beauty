@@ -21,7 +21,7 @@ const HomeBanner = () => {
     gsap.set(decorativeRef.current, { opacity: 0, scale: 0.8 });
 
     tl.to(bannerRef.current, {
-      paddingTop: '8rem',
+      
       duration: 1.5,
       ease: 'power4.out',
     })
@@ -40,7 +40,7 @@ const HomeBanner = () => {
     // CHANGE 1: Use <section> instead of <div>
     <section 
       ref={bannerRef}
-      className="relative w-full bg-base-100 overflow-hidden py-24 md:py-32"
+      className="relative w-full bg-base-100 overflow-hidden "
       aria-labelledby="banner-heading"
     >
       <div 

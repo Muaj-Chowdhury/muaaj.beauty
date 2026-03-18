@@ -77,7 +77,7 @@ const Navbar = () => {
                         <div>
                           <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary mb-4">By Category</p>
                           <ul className="space-y-3 text-sm">
-                            {link.categories.map(cat => <li key={cat.name}><Link href={cat.href} className="hover:text-primary transition-colors">{cat.name}</Link></li>)}
+                            {link.categories.map(cat => <li key={cat.name}><Link href={cat.href} classjName="hover:text-primary transition-colors">{cat.name}</Link></li>)}
                           </ul>
                         </div>
                         <div>
