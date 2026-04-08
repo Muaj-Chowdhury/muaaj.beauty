@@ -65,7 +65,7 @@ const HomeBanner = () => {
 
     <h1 id="banner-heading" ref={headlineRef} className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-[-0.04em] mb-8">
       Elevate Your Natural <br />
-      <span className="text-gradient font-medium italic">Glow.</span>
+      <span className="gradient-text font-medium italic">Glow.</span>
     </h1>
 
     <p ref={subRef} className="max-w-xl mb-12 text-base md:text-lg text-base-content/80 leading-relaxed text-balance">

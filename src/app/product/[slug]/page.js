@@ -45,11 +45,12 @@ export async function generateMetadata({ params }) {
 
 export default async function ProductPage({ params }) {
      const { slug } = await params;
-   console.log("--- REQUESTING SLUG:", slug); // <--- See if this shows up
+   
 
    const collection = await getCollection("products");
+   
    const product = await collection.findOne({ slug: slug });
-   console.log("--- DB RESULT:", product);
+   
 
   if (!product) {
     notFound(); // Redirects to 404 if slug is invalid

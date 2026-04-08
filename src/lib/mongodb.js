@@ -1,6 +1,6 @@
 import { MongoClient, ServerApiVersion } from "mongodb";
 
-const uri = process.env.MONGODB_URI;
+const uri = process.env.MONGODB_URI_2;
 const options = {
   serverApi: {
     version: ServerApiVersion.v1,
@@ -12,7 +12,7 @@ const options = {
 let client;
 let clientPromise;
 
-if (!process.env.MONGODB_URI) {
+if (!process.env.MONGODB_URI_2) {
   throw new Error("Please add your Mongo URI to .env.local");
 }
 

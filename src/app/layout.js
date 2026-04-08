@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://muaaj-beauty.vercel.app'),
   title: {
     default: "MUAAJ.beauty | Organic Skincare & Professional Cosmetics",
     template: "%s | MUAAJ.beauty",
@@ -37,6 +38,12 @@ export const metadata = {
         alt: "MUAAJ.beauty - Natural Radiance",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MUAAJ.beauty | Organic Skincare",
+    description: "Botanical logic meets professional results.",
+    images: ["/og-image.jpg"], 
   },
 };
 

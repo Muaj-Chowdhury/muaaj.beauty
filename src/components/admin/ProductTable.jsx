@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   Eye,
   Trash2,
@@ -42,6 +43,7 @@ const ProductTable = ({ products }) => {
     <div className="space-y-6">
       {/* 1. Header Stats (E-commerce Analytics) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+
         <div className="glass-card p-4 flex items-center gap-4 border-l-4 border-primary">
           <div className="p-3 bg-primary/10 rounded-xl text-primary">
             <Package size={24} />
@@ -51,6 +53,7 @@ const ProductTable = ({ products }) => {
             <p className="text-2xl font-bold">{products.length}</p>
           </div>
         </div>
+
         <div className="glass-card p-4 flex items-center gap-4 border-l-4 border-warning">
           <div className="p-3 bg-warning/10 rounded-xl text-warning">
             <AlertTriangle size={24} />
@@ -62,6 +65,8 @@ const ProductTable = ({ products }) => {
             </p>
           </div>
         </div>
+
+
         <div className="glass-card p-4 flex items-center gap-4 border-l-4 border-secondary">
           <div className="p-3 bg-secondary/10 rounded-xl text-secondary">
             <TrendingUp size={24} />
@@ -75,6 +80,7 @@ const ProductTable = ({ products }) => {
             </p>
           </div>
         </div>
+        
       </div>
 
       {/* 2. Advanced Search */}
@@ -108,15 +114,17 @@ const ProductTable = ({ products }) => {
               {filteredProducts.map((product) => (
                 <tr
                   key={product._id}
-                  className="hover:bg-base-200/30 transition-colors border-b border-base-200/50"
+                  className="hover:bg-base-200 transition-colors border-b border-base-200/50"
                 >
                   {/* Product Info */}
                   <td>
                     <div className="flex items-center gap-4">
                       <div className="w-14 h-14 rounded-2xl overflow-hidden bg-base-300 border border-base-300 flex-shrink-0">
-                        <img
-                          src={product.images?.[0]}
-                          alt=""
+                        <Image
+                          src={product.images?.[0] || "/placeholder.png"}
+                          alt={product.name}
+                          width={56}
+                          height={56}
                           className="w-full h-full object-cover"
                         />
                       </div>

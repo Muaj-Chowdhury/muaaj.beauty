@@ -45,7 +45,7 @@ const FilterSidebar = () => {
         <input 
           type="range" 
           min="0" 
-          max="1000" 
+          max="100" 
           value={price} 
           className="range range-primary range-xs" 
           onChange={(e) => setPrice(e.target.value)}
@@ -53,7 +53,7 @@ const FilterSidebar = () => {
         />
         <div className="flex justify-between text-[10px] opacity-50 mt-2 font-bold">
           <span>$0</span>
-          <span>$1000+</span>
+          <span>$100+</span>
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import { createProduct } from "@/lib/actions/product.actions";
 import toast from "react-hot-toast";
 import {
@@ -16,6 +17,7 @@ import { uploadToImgBB } from "@/utils";
 const AddProductForm = () => {
   const [loading, setLoading] = useState(false);
   const [files, setFiles] = useState([]);
+  console.log(files);
   const [uploading, setUploading] = useState(false);
   // Custom states for Array fields
   const [usageSteps, setUsageSteps] = useState([]);
@@ -31,7 +33,16 @@ const AddProductForm = () => {
 
     try {
       const formData = new FormData(e.target);
+      // console.log(formData);
+      formData.forEach((value, key) => {
+        console.log(key, value);
+      });
+
+
       const data = Object.fromEntries(formData.entries());
+      // console.log(formData.entries());
+      console.log([...formData.entries()]);
+
 
       // --- NEW: Upload Files to ImgBB ---
       const uploadedImageUrls = [];
@@ -49,19 +60,19 @@ const AddProductForm = () => {
       data.images = [...uploadedImageUrls].filter(Boolean);
       // Manually ensure isFeatured is a Boolean
       data.isFeatured = formData.get("isFeatured") === "true";
+      console.log(data.isFeatured);
+      // const res = await createProduct(data);
 
-      const res = await createProduct(data);
-
-      if (res.success) {
-        toast.success(res.message);
-        e.target.reset();
-        setIngredients([]);
-        setConcerns([]);
-        setUsageSteps([]); // <--- RESET THIS STATE
-        setFiles([]); // Clear files
-      } else {
-        toast.error(res.message);
-      }
+      // if (res.success) {
+      //   toast.success(res.message);
+      //   e.target.reset();
+      //   setIngredients([]);
+      //   setConcerns([]);
+      //   setUsageSteps([]); // <--- RESET THIS STATE
+      //   setFiles([]); // Clear files
+      // } else {
+      //   toast.error(res.message);
+      // }
     } catch (err) {
       toast.error("Image upload failed. Check your API key.");
     } finally {
@@ -125,7 +136,7 @@ const AddProductForm = () => {
           <label className="label font-semibold">Product Description</label>
           <textarea
             name="description"
-            className="textarea textarea-bordered h-32 bg-base-200/50"
+            className="textarea textarea-bordered h-32 w-full bg-base-200/50"
             placeholder="Describe the glow..."
           ></textarea>
         </div>
@@ -249,13 +260,14 @@ const AddProductForm = () => {
             {/* Previews */}
             <div className="flex flex-wrap gap-4">
               {files.map((file, idx) => (
-                <div key={idx} className="relative w-20 h-20 group">
-                  <img
-                    src={URL.createObjectURL(file)}
-                    className="w-full h-full object-cover rounded-xl border border-base-300"
-                    alt="Preview"
-                  />
-                  <button
+                  <div key={idx} className="relative w-20 h-20 group">
+                    <Image
+                      src={URL.createObjectURL(file)}
+                      className="w-full h-full object-cover rounded-xl border border-base-300"
+                      alt="Preview"
+                      fill
+                    />
+                    <button
                     type="button"
                     onClick={() => setFiles(files.filter((_, i) => i !== idx))}
                     className="absolute -top-2 -right-2 bg-error text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"

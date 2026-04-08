@@ -13,7 +13,7 @@ const SortDropdown = () => {
 
   return (
     <select 
-      className="select select-bordered select-sm rounded-full bg-base-100 font-semibold text-xs"
+      className="select select-bordered select-sm rounded-full bg-   font-semibold text-xs"
       onChange={(e) => handleSort(e.target.value)}
       defaultValue={searchParams.get('sort') || ""}
     >
