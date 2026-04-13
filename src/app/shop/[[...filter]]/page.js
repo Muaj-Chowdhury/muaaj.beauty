@@ -6,7 +6,7 @@ import { Suspense } from "react";
 import ProductCard from "@/components/cards/ProductCard";
 
 export default async function ShopPage({ params, searchParams }) {
-  // 1. Extract info from the URL path: /shop/[type]/[value]
+  // 1. Extract info from the URL path: /shop/[type]/[value]               {/*R*/}
   const pathParams = await params;
   const filterArray = pathParams.filter || []; // e.g., ["category", "skincare"]
 
@@ -37,10 +37,10 @@ export default async function ShopPage({ params, searchParams }) {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="flex flex-col lg:flex-row gap-12">
+        <div className="flex flex-col lg:flex-row gap-12"> 
           {/* Sidebar (Filter Logic) */}
           <aside className="w-full lg:w-72 flex-shrink-0">
-            <div className="sticky top-28">
+            <div className="sticky top-28">                                        {/*R*/}
               <FilterSidebar />
             </div>
           </aside>

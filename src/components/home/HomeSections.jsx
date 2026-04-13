@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-const categories = [
   // name: Display label, slug: The value matching your DB, image: icon path
-  { name: 'Skincare', slug: 'Skincare', image: '/icons/cleanser.png' },
-  { name: 'Haircare', slug: 'Haircare', image: '/icons/serum.png' },
-  { name: 'Cosmetics', slug: 'Cosmetics', image: '/icons/moisturizer.png' },
+const categories = [
+  { name: 'Skincare', slug: 'Skincare', image: '/skincare.svg' },
+  { name: 'Haircare', slug: 'Haircare', image: '/haircare.svg' },
+  { name: 'Cosmetics', slug: 'Cosmetics', image: '/cosmetics.svg' },
 ];
 
 const concerns = [

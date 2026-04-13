@@ -218,7 +218,7 @@ const ProductTable = ({ products }) => {
                       </label>
                       <ul
                         tabIndex={0}
-                        className="dropdown-content z-[1] menu p-2 shadow-2xl bg-base-100 border border-base-200 rounded-2xl w-40"
+                        className="dropdown-content z-1 menu p-2 shadow-2xl bg-base-100 border border-base-200 rounded-2xl w-40"
                       >
                         <li>
                           <a className="text-xs font-semibold">
