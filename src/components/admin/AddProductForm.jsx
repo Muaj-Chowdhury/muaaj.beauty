@@ -38,18 +38,19 @@ const AddProductForm = () => {
         console.log(key, value);
       });
 
-
       const data = Object.fromEntries(formData.entries());
       // console.log(formData.entries());
       console.log([...formData.entries()]);
 
-
       // --- NEW: Upload Files to ImgBB ---
-      const uploadedImageUrls = [];
-      for (const file of files) {
-        const url = await uploadToImgBB(file);
-        uploadedImageUrls.push(url);
-      }
+      // const uploadedImageUrls = [];
+      // for (const file of files) {
+      //   const url = await uploadToImgBB(file);
+      //   uploadedImageUrls.push(url);
+      // }
+      // Faster way:
+      const uploadPromises = files.map((file) => uploadToImgBB(file));
+      const uploadedImageUrls = await Promise.all(uploadPromises);
       // ----------------------------------
 
       data.ingredients = ingredients;
@@ -260,14 +261,14 @@ const AddProductForm = () => {
             {/* Previews */}
             <div className="flex flex-wrap gap-4">
               {files.map((file, idx) => (
-                  <div key={idx} className="relative w-20 h-20 group">
-                    <Image
-                      src={URL.createObjectURL(file)}
-                      className="w-full h-full object-cover rounded-xl border border-base-300"
-                      alt="Preview"
-                      fill
-                    />
-                    <button
+                <div key={idx} className="relative w-20 h-20 group">
+                  <Image
+                    src={URL.createObjectURL(file)}
+                    className="w-full h-full object-cover rounded-xl border border-base-300"
+                    alt="Preview"
+                    fill
+                  />
+                  <button
                     type="button"
                     onClick={() => setFiles(files.filter((_, i) => i !== idx))}
                     className="absolute -top-2 -right-2 bg-error text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"
